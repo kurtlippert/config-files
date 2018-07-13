@@ -3,7 +3,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "nvim",
     "vim.useSystemClipboard": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<c-j>"],
             "after": ["o", "<c-[>"]
@@ -30,5 +30,12 @@
         "-l"
     ],
     "editor.renderWhitespace": "none",
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": ".venv/bin/python3.6m",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": ".venv/bin/flake8",
+    "files.associations": {
+        ".flake8": "ini"
+    }
 }
