@@ -1,6 +1,6 @@
 " select-all type thing when hitting <c-a>
 noremap <c-a> ggvG$
-
+"
 " insert line below without having to be in insert mode
 noremap <c-j> o<c-[>
 
@@ -17,4 +17,4 @@ set clipboard=unnamedplus
 set expandtab
 
 " 'width' in spaces of a tab
-set tabstop=2
+"set tabstop=2
