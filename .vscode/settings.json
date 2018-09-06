@@ -31,10 +31,9 @@
     ],
     "editor.renderWhitespace": "none",
     "keyboard.dispatch": "keyCode",
-    // "python.linting.pylintEnabled": false,
-    // "python.pythonPath": ".venv/bin/python3.6m",
-    // "python.linting.flake8Enabled": true,
-    // "python.linting.flake8Path": ".venv/bin/flake8",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8",
     "files.associations": {
         ".flake8": "ini"
     },
@@ -42,5 +41,12 @@
         "<C-d>": true,
         "<C-f>": false
     },
-    "window.zoomLevel": 0.001
+    "window.zoomLevel": 0.001,
+    "git.enableSmartCommit": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.venv/**": true
+    }
 }
