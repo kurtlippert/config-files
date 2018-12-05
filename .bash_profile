@@ -105,9 +105,16 @@ else
     hostStyle="${yellow}";
 fi;
 
+if test -z "$VIRTUAL_ENV" ; then
+    PYTHON_VIRTUALENV="";
+else
+    PYTHON_VIRTUALENV="[`basename \"$(dirname $VIRTUAL_ENV)\"`] ";
+fi;
+
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
+PS1+="${PYTHON_VIRTUALENV}"; # python virtualenv
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host

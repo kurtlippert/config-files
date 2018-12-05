@@ -19,6 +19,7 @@ xmodmap -e "clear Lock"
 
 # vim with x support stuff (fedora)
 alias vim="vimx"
+alias vi="vimx"
 
 # qmake-qt4 alias (fedora)
 alias qmake="qmake-qt4"
